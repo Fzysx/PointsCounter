@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/basketball_ball"/>
+
+    <TextView
+        android:id="@+id/team_a_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="166dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Добро пожаловать в приложение, которое
+поможет Вам вести счет баскетбольного (стритбольного) матча! Играйте баскетбол (стритбол) вместе с Points Counter!!!"
+        android:textColor="#FF8888"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/start_use_app_button"
+        style="@style/MyStyleButtonMain"
+        android:layout_width="207dp"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="55dp"
+        android:onClick="onClickStartUseApp"
+        android:text="ПОЕХАЛИ!"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:textSize="30sp"/>
+
+</RelativeLayout>

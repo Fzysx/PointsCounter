@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Points Counter</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="enter_team_a_name">Введите название первой команды</string>
+    <string name="enter_team_b_name">Введите название второй команды</string>
+    <string name="timer_srart_button">Старт</string>
+    <string name="timer_stop_button">Сброс таймера</string>
+    <string name="timer_reset_button">Завершить игру</string>
+</resources>

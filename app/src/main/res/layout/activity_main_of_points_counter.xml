@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityOfPointsCounter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_a_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Team A"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold"
+               />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/basket"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"/>
+
+
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/MyStyleButtonMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_3_point_team_A"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamA"
+                    android:text="+3 Очка"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/cancel_button_3_point_team_A"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamA"
+                    android:text="X"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_2_point_team_A"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamA"
+                    android:text="+2 Очка"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+                    />
+
+                <Button
+                    android:id="@+id/cancel_button_2_point_team_A"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamA"
+                    android:text="X"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"/>
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_free_throw_team_A"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamA"
+                    android:text="Штрафной бросок"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/cancel_button_free_throw_team_A"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamA"
+                    android:text="X"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/team_b_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Team B"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/basket"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/MyStyleButtonMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp"
+                tools:ignore="HardcodedText"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/cancel_button_3_point_team_B"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamB"
+                    android:text="X"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"/>
+
+
+                <Button
+                    android:id="@+id/button_3_point_team_B"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamB"
+                    android:text="+3 Очка"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/cancel_button_2_point_team_B"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamB"
+                    android:text="X"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"/>
+
+                <Button
+                    android:id="@+id/button_2_point_team_B"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamB"
+                    android:text="+2 Очка"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/cancel_button_free_throw_team_B"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamB"
+                    android:text="X"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText"/>
+
+                <Button
+                    android:id="@+id/button_free_throw_team_B"
+                    style="@style/MyStyleButtonMain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickPointsTeamB"
+                    android:text="Штрафной бросок"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reset_points_of_both_team"
+            style="@style/MyStyleButtonMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="onClickResetPoints"
+            android:text="Сброс счета"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/edit_text_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:hint="Введите время на игру"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <Button
+            android:id="@+id/button_set"
+            style="@style/MyStyleButtonMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="Установить время"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="40dp"
+            android:text="00:00"
+            android:textColor="@android:color/black"
+            style="@style/MyStyleButtonMain"
+            android:layout_margin="10dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/button_start_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+
+            android:text="@string/timer_srart_button"
+            style="@style/MyStyleButtonMain"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+
+            android:text="@string/timer_stop_button"
+            style="@style/MyStyleButtonMain"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:onClick="onClickGameOver"
+            android:text="@string/timer_reset_button"
+            style="@style/MyStyleButtonMain"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

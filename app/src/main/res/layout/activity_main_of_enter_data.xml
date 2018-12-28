@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityOfEnterData"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/enter_team_A_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/enter_team_a_name"
+        android:ems="20"
+        android:textStyle="bold"
+        android:textColor="#616161"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+       />
+
+    <EditText
+        android:id="@+id/enter_team_B_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/enter_team_b_name"
+        android:ems="20"
+        android:textStyle="bold"
+        android:textColor="#616161"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <Button
+         android:id="@+id/enter_information_and_start_game"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_margin="5dp"
+         android:onClick="onSendEnterInformationStartGame"
+         android:text="НАЧАТЬ ИГРУ!"
+         android:layout_weight="1"
+         style="@style/MyStyleButtonMain"
+         android:textStyle="bold"
+         android:layout_centerInParent="true"
+         tools:ignore="HardcodedText" />
+
+ </RelativeLayout>
+
+
+
+</LinearLayout>
